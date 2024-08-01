@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>COOL UIUC PEOPLE</title>
+		<link href="/style.css" rel="stylesheet"></head>
+
+  <script src="script.js">
+  </script>
+
+    <body onload="getDate()">
+			<div class="container">
+        <form autocomplete="off" action="https://www.google.com/search?q=site:purdue.edu" method="get">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <img src="UIUCLogo.jpg" alt="UIUC I logo" width="100" height="100">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input name="q" id="txtSearch" type="text" placeholder="Search UIUCRejects.com" onkeyup="toggleButton()">
+                            <input type="submit" disabled value="Search" name="btnSearch" id="btnSearch">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer"><img height="14px" src="leaf.png">&nbsp;&nbsp;Carbon neutral since 2024</td>
+                    </tr>
+                    <tr>
+                        <td class="footer"> 
+                            <a href="https://www.purdue.edu/" target="_blank">
+                                Click here to see our rejects&nbsp;|&nbsp;<span id="date">[JAVASCRIPT DATE HERE]</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+			</div>
+    </body>
+</html>
